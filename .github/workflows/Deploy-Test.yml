@@ -16,4 +16,5 @@ jobs:
         echo $GITHUB_RUN_ID
         sudo apt-get install git 
         cd
+        rm -rf ./GitHub-Actions/
         git clone https://github.com/Mobileaspectstest/GitHub-Actions.git
