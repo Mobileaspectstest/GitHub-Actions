@@ -1,0 +1,16 @@
+name: Deploy to Production
+on:
+  push:
+    branches:
+    - main
+    - stage
+    - dev
+# on:
+#   workflow_dispatch
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        echo $GITHUB_RUN_ID
